@@ -1,2 +1,5 @@
 rootProject.name='GitCommit'
 include ':app'
+include ':mvpchow'
+include ':mvpchow2'
+include ':mvpchow3'
