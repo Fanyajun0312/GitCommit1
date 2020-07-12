@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  * @date：2020/7/10
- * @describe：基类p
+ * @describe：基类p 收集model 绑定view
  * @author：FanYaJun
  */
 public abstract class BasePersenter<V extends BaseView> {

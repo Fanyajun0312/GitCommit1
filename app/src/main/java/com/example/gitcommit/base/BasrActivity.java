@@ -14,7 +14,6 @@ import butterknife.ButterKnife;
  */
 public abstract class BasrActivity<P extends BasePersenter> extends AppCompatActivity implements BaseView {
     public P mPersenter;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

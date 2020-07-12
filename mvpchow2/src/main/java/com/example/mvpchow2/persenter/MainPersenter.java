@@ -12,9 +12,7 @@ import com.example.mvpchow2.view.MianView;
  * @author：FanYaJun
  */
 public class MainPersenter extends BasePersenter<MianView> implements MianCallBack {
-
     private MianModel mianModel;
-
     @Override
     protected void initModel() {
         mianModel = new MianModel();

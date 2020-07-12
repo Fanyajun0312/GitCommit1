@@ -10,4 +10,5 @@ import com.example.gitcommit.bean.FuliBean;
  */
 public interface MainView extends BaseView {
     void setData(FuliBean fuliBean);
+
 }

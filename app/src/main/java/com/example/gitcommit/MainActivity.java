@@ -28,7 +28,6 @@ public class MainActivity extends BasrActivity<MianPerenter> implements MainView
 
     @Override
     protected void initListener() {
-
     }
 
     @Override

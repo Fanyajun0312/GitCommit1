@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.mvpchow2.R;
 import com.example.mvpchow2.Utils.ImageLoader;
+import com.example.mvpchow2.base.BaseApp;
 import com.example.mvpchow2.bean.FuliBean;
 
 import java.util.ArrayList;
@@ -49,7 +50,7 @@ public class RlvAdapter extends RecyclerView.Adapter<RlvAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.tvTit.setText(list.get(position).getDesc());
-        ImageLoader.setIMage(context,list.get(position).getUrl(),holder.ivImg);
+        ImageLoader.setIMage(BaseApp.sBaseApp,list.get(position).getUrl(),holder.ivImg);
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

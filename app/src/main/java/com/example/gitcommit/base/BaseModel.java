@@ -19,6 +19,7 @@ public abstract class BaseModel {  //modle抽象类
         if (compositeDisposable == null) {
             synchronized (BaseModel.class) {
                 if (compositeDisposable == null) {
+
                     compositeDisposable = new CompositeDisposable();
 
                 }

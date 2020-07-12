@@ -32,28 +32,28 @@ public class MainModel extends BaseModel {
 
         ApiServcer apiServcer = retrfit.create(ApiServcer.class);
         Observable<FuliBean> ob = apiServcer.getData();
-        ob.subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Observer<FuliBean>() {
-                    @Override
-                    public void onSubscribe(Disposable d) {
+        ob.subscribeOn(Schedulers.io());
+        ob.observeOn(AndroidSchedulers.mainThread());
+        ob.subscribe(new Observer<FuliBean>() {
+            @Override
+            public void onSubscribe(Disposable d) {
+                disposable();
+            }
 
-                    }
+            @Override
+            public void onNext(FuliBean fuliBean) {
+                callback.onFonil(fuliBean);
+            }
 
-                    @Override
-                    public void onNext(FuliBean fuliBean) {
-                        callback.onFonil(fuliBean);
-                    }
+            @Override
+            public void onError(Throwable e) {
 
-                    @Override
-                    public void onError(Throwable e) {
+            }
 
-                    }
+            @Override
+            public void onComplete() {
 
-                    @Override
-                    public void onComplete() {
-
-                    }
-                });
+            }
+        });
     }
 }
