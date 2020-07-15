@@ -1,0 +1,4 @@
+rootProject.name='DispatchingEvents'
+include ':app'
+include ':myviewdoy06'
+include ':myviewdemo2'
