@@ -76,11 +76,10 @@
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
         android:background="@android:color/white"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:id="@+id/tab"/>
-
-    <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/vp"/>
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 </LinearLayout>

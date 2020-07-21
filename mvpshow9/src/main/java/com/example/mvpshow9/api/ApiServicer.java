@@ -7,6 +7,7 @@ import io.reactivex.Observable;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 /**
@@ -23,6 +24,6 @@ public interface ApiServicer {
     @GET("yunxue_app_api/content/getData/30/66597/1/10")
     Observable<JiangShiBean> getData();
 
-    @GET("yunxue_app_api/teacher/getTeacherPower/")
-    Observable<beanLisr> getDatass(@Query("ID") String id);
+    @GET("yunxue_app_api/teacher/getTeacherPower/{page}")
+    Observable<beanLisr> getDatass(@Path("page") int page);
 }

@@ -1,6 +1,7 @@
 package com.example.mvpshow9;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -53,6 +54,8 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainVie
     }
     private void initToolbar() {
         //设置支持toolbar
+
+
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
@@ -87,10 +90,9 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainVie
         adapter.setOnclicitemListener(new RlvAdapter.onclicitemListener() {
             @Override
             public void oncilck(int position) {
-
                 if(ddddd=true){
-                    Intent intent = new Intent(MainActivity.this, DescActivity.class);
                     resultBean = list.get(position);
+                    Intent intent = new Intent(MainActivity.this, DescActivity.class);
                     intent.putExtra("bean",resultBean);
                     startActivity(intent);
                 }

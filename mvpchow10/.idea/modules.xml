@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../GitCommit.iml" filepath="$PROJECT_DIR$/../GitCommit.iml" group="GitCommit" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" group="GitCommit/app" />
+      <module fileurl="file://$PROJECT_DIR$/../mvpchow/mvpchow.iml" filepath="$PROJECT_DIR$/../mvpchow/mvpchow.iml" group="GitCommit/mvpchow" />
+      <module fileurl="file://$PROJECT_DIR$/mvpchow10.iml" filepath="$PROJECT_DIR$/mvpchow10.iml" group="GitCommit/mvpchow10" />
+      <module fileurl="file://$PROJECT_DIR$/../mvpchow2/mvpchow2.iml" filepath="$PROJECT_DIR$/../mvpchow2/mvpchow2.iml" group="GitCommit/mvpchow2" />
+      <module fileurl="file://$PROJECT_DIR$/../mvpchow3/mvpchow3.iml" filepath="$PROJECT_DIR$/../mvpchow3/mvpchow3.iml" group="GitCommit/mvpchow3" />
+      <module fileurl="file://$PROJECT_DIR$/../mvpchow32/mvpchow32.iml" filepath="$PROJECT_DIR$/../mvpchow32/mvpchow32.iml" group="GitCommit/mvpchow32" />
+      <module fileurl="file://$PROJECT_DIR$/../mvpchow4/mvpchow4.iml" filepath="$PROJECT_DIR$/../mvpchow4/mvpchow4.iml" group="GitCommit/mvpchow4" />
+      <module fileurl="file://$PROJECT_DIR$/../mvpchow8/mvpchow8.iml" filepath="$PROJECT_DIR$/../mvpchow8/mvpchow8.iml" group="GitCommit/mvpchow8" />
+      <module fileurl="file://$PROJECT_DIR$/../mvpshow5/mvpshow5.iml" filepath="$PROJECT_DIR$/../mvpshow5/mvpshow5.iml" group="GitCommit/mvpshow5" />
+      <module fileurl="file://$PROJECT_DIR$/../mvpshow6/mvpshow6.iml" filepath="$PROJECT_DIR$/../mvpshow6/mvpshow6.iml" group="GitCommit/mvpshow6" />
+      <module fileurl="file://$PROJECT_DIR$/../mvpshow7/mvpshow7.iml" filepath="$PROJECT_DIR$/../mvpshow7/mvpshow7.iml" group="GitCommit/mvpshow7" />
+      <module fileurl="file://$PROJECT_DIR$/../mvpshow9/mvpshow9.iml" filepath="$PROJECT_DIR$/../mvpshow9/mvpshow9.iml" group="GitCommit/mvpshow9" />
+    </modules>
+  </component>
+</project>

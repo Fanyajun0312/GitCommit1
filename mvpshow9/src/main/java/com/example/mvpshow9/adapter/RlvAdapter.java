@@ -62,15 +62,22 @@ public class RlvAdapter extends RecyclerView.Adapter<RlvAdapter.ViewHolder> {
             holder.btnGuan.setVisibility(View.VISIBLE);
         }
 
-        holder.btnGuan.setOnClickListener(new View.OnClickListener() {
+//        holder.btnGuan.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                if(holder.btnGuan.isClickable()){
+//                    holder.btnGuan.setText("已关注");
+//                }else{
+//                    holder.btnGuan.setText("关注");
+//                }
+//                    onclicitemListener.oncilck(position);
+//            }
+//        });
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(holder.btnGuan.isClickable()){
-                    holder.btnGuan.setText("已关注");
-                }else{
-                    holder.btnGuan.setText("关注");
-                }
-                    onclicitemListener.oncilck(position);
+                onclicitemListener.oncilck(position);
             }
         });
 
