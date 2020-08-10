@@ -1,2 +1,6 @@
 rootProject.name='MyView'
 include ':app'
+include ':sanfang'
+include ':weakerusemen'
+include ':huanxin'
+include ':liaotian'

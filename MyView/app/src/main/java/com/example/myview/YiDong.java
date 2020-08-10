@@ -50,10 +50,11 @@ public class YiDong extends View {
             isUp=false;
             MevmX = event.getX();
             MevmY = event.getY();
+            invalidate();
         }else if(event.getAction()==MotionEvent.ACTION_UP){
             isUp=true;
         }
-            invalidate();
+
         return true;//默认flase
     }
 }

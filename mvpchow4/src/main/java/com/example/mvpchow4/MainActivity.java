@@ -11,12 +11,6 @@ import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.mvpchow4.base.BaseActivty;
-import com.example.mvpchow4.bean.FuliBean;
-import com.example.mvpchow4.model.MainModel;
-import com.example.mvpchow4.persenter.MainPersenter;
-import com.example.mvpchow4.utils.BaseApp;
-import com.example.mvpchow4.view.MainView;
 
 import java.util.ArrayList;
 

@@ -16,7 +16,7 @@ public abstract class BasePersenter<V extends BaseView> {
 
     protected abstract void initModel();
     public void addmodel(BaseModel baseModel){
-        models.add(baseModel);
+         models.add(baseModel);
     }
     public void bindview(V view){
         this.mview=view;
