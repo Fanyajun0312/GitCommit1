@@ -1,4 +1,4 @@
-package com.example.pojecttwo;
+package com.example.pojecttwo.ceshibean;
 
 import java.util.List;
 

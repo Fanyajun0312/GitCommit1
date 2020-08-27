@@ -17,12 +17,7 @@ import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * 项目名：Shopping
- * 包名：  com.example.httplibrary.client
- * 文件名：HttpObserable
- * 创建者：liangxq
- * 创建时间：2020/8/4  10:31
- * 描述：TODO
+ * 对数据返回类型进行操作
  */
 public class HttpObserable {
     LifecycleProvider lifecycleProvider;

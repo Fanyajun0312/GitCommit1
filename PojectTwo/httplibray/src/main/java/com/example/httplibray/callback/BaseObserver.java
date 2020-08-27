@@ -10,16 +10,10 @@ import com.example.httplibray.example.ExceptionEngine;
 import com.example.httplibray.utils.ThreadUtils;
 
 import io.reactivex.Observer;
-import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
 
 /**
- * 项目名：Shopping
- * 包名：  com.example.httplibrary.callback
- * 文件名：BaseObserver
- * 创建者：liangxq
- * 创建时间：2020/8/1  14:15
- * 描述：TODO
+ * 判断解除关联的类操作
  */
 public abstract class BaseObserver implements Observer{
     String tag;
@@ -29,6 +23,7 @@ public abstract class BaseObserver implements Observer{
             RequestManagerlm.getInstance().add(tag,d);
         }
     }
+
 
     @Override
     public void onNext(Object t) {

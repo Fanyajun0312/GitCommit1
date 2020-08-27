@@ -17,31 +17,31 @@ import com.google.gson.JsonElement;
  * 示例
  */
 public abstract class HttpCallBack<T> extends BaseCallBack<T> {
-    Response response;
+    Response response;//代表最外围
     @Override
     protected T onConvert(String result) {
-        T t=null;
-        response = new Gson().fromJson(result, Response.class);
+        T t=null;//代表数据
+        response = new Gson().fromJson(result, Response.class);//得到数据外围
         JsonElement data = response.getData();
         int errorCode = response.getErrorCode();
         String errorMsg = response.getErrorMsg();
-        switch (errorCode) {
+        switch (errorCode) {//sw遍历 code吗如果是-1那么没有请求到数据
             case -1:
-                onError(errorMsg,errorCode);
+                onError(errorMsg,errorCode);//爆出他的错误信息
                 break;
             default:
                 if (isCodeSuccess()) {
-                    t=convert(data);
+                    t=convert(data);//回调成功方法数据等于他
                 }
                 break;
         }
-        Log.e("liangxq", "onConvert: "+t.toString() );
-        return t;
+        Log.e("TAG", "onConvert: "+t.toString() );
+        return t;//返回给本类
     }
 
 
     @Override
-    public boolean isCodeSuccess() {
+    public boolean isCodeSuccess() {//判断等于0的话就传输局
         if (response != null) {
             return response.getErrorCode() == 0;
         }

@@ -1,4 +1,4 @@
-package com.example.pojecttwo;
+package com.example.pojecttwo.ceshibean;
 
 /**
  * @date：2020/8/10
@@ -420,5 +420,27 @@ public class DataBean {
         public void setHasDissed(boolean hasDissed) {
             this.hasDissed = hasDissed;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "DataBean{" +
+                "id=" + id +
+                ", itemId=" + itemId +
+                ", itemType=" + itemType +
+                ", createTime=" + createTime +
+                ", duration=" + duration +
+                ", feeds_text='" + feeds_text + '\'' +
+                ", authorId=" + authorId +
+                ", activityIcon=" + activityIcon +
+                ", activityText=" + activityText +
+                ", width=" + width +
+                ", height=" + height +
+                ", url='" + url + '\'' +
+                ", cover='" + cover + '\'' +
+                ", author=" + author +
+                ", topComment=" + topComment +
+                ", ugc=" + ugc +
+                '}';
     }
 }
